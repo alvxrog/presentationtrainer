@@ -6,9 +6,8 @@ WORKDIR /opt/workspace-internal/
 RUN . /venv/main/bin/activate
 
 # Copy mmaction2 installation script and exec it
-COPY ../shared/mmaction2_deps.sh /scripts/mmaction2_deps.sh
-RUN chmod +x /scripts/mmaction2.sh && /scripts/mmaction2.sh
+COPY /shared/mmaction2_deps.sh /scripts/mmaction2_deps.sh
+RUN chmod +x /scripts/mmaction2_deps.sh && /scripts/mmaction2_deps.sh
 
-# Pull dataset and extract it
-COPY ../shared/create_dataset.sh /scripts/create_dataset.sh
-RUN chmod +x /scripts/create_dataset.sh && /scripts/create_dataset.sh
+# The installation of MMAction2 does not contain any custom modifications
+# We will have to use the train methods
