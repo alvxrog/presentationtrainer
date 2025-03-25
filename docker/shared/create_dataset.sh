@@ -9,3 +9,6 @@ python format_for_mmaction2.py
 
 # Clone presentationtrainer repo
 git clone https://github.com/alvxrog/presentationtrainer
+
+# Move the swin config to the mmaction2 config dir
+cp presentationtrainer/mmaction2/swin_ptv1.py mmaction2/configs/recognition/swin_ptv1.py
