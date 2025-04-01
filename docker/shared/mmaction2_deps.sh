@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Install PyTorch
-pip3 install torch torchvision torchaudio
+# Install PyTorch with CUDA 11.8 support (due to mmcv version conflict)
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
 # Install openmim and building blocks
 pip install -U openmim
