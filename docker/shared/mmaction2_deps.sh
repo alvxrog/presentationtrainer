@@ -12,6 +12,7 @@ mim install mmpose
 pip install importlib-metadata
 
 # Install mmaction2 by source (necessary for some utils it provides)
+cd ..
 git clone https://github.com/open-mmlab/mmaction2.git
 cd mmaction2
 pip install -v -e .

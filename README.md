@@ -11,6 +11,7 @@ python3 -m venv mma2venv
 source ./mma2venv/bin/activate
 which python            # Should be the one in the venv
 git clone https://github.com/alvxrog/presentationtrainer
+cd presentationtrainer
 bash ./docker/shared/mmaction2_deps.sh
-bash ./create-dataset
+bash ./docker/create_dataset.sh
 ```
