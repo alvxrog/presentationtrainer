@@ -16,10 +16,10 @@ model = dict(
 
 # dataset settings
 dataset_type = 'VideoDataset'
-data_root = '/opt/workspace-internal/presentationtrainer-dataset/pt-v1/train'
-data_root_val = '/opt/workspace-internal/presentationtrainer-dataset/pt-v1/val'
-ann_file_train = '/opt/workspace-internal/presentationtrainer-dataset/train.txt'
-ann_file_val = '/opt/workspace-internal/presentationtrainer-dataset/val.txt'
+data_root = '/workspace/presentationtrainer-dataset/pt-v1/train'
+data_root_val = '/workspace/presentationtrainer-dataset/pt-v1/val'
+ann_file_train = '/workspace/presentationtrainer-dataset/train.txt'
+ann_file_val = '/workspace/presentationtrainer-dataset/val.txt'
 # god forgive me for what i'm about to do
 ann_file_test = ann_file_val
 

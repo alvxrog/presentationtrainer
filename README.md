@@ -13,5 +13,8 @@ which python            # Should be the one in the venv
 git clone https://github.com/alvxrog/presentationtrainer
 cd presentationtrainer
 bash ./docker/shared/mmaction2_deps.sh
-bash ./docker/create_dataset.sh
+bash ./docker/shared/create_dataset.sh
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 ```
+
+You are ready to start training with MMAction2
